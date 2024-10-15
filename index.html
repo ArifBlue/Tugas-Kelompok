@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management Form</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-size: 14px;
+      color: #666;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="date"]:focus,
+    input[type="number"]:focus,
+    select:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Employee Management</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="emp-id">Employee ID</label>
+        <input type="text" id="emp-id" name="employee_id" placeholder="Enter Employee ID" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-name">Full Name</label>
+        <input type="text" id="emp-name" name="full_name" placeholder="Enter Full Name" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-email">Email</label>
+        <input type="email" id="emp-email" name="email" placeholder="Enter Email Address" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-dob">Date of Birth</label>
+        <input type="date" id="emp-dob" name="date_of_birth" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-gender">Gender</label>
+        <select id="emp-gender" name="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="emp-phone">Phone Number</label>
+        <input type="text" id="emp-phone" name="phone" placeholder="Enter Phone Number" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-position">Position</label>
+        <input type="text" id="emp-position" name="position" placeholder="Enter Job Position" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-department">Department</label>
+        <input type="text" id="emp-department" name="department" placeholder="Enter Department" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-join-date">Join Date</label>
+        <input type="date" id="emp-join-date" name="join_date" required>
+      </div>
+      <div class="form-group">
+        <label for="emp-salary">Salary</label>
+        <input type="number" id="emp-salary" name="salary" placeholder="Enter Salary" required>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
